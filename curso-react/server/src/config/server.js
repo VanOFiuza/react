@@ -13,3 +13,5 @@ server.listen(port, function () {
 //template string (observe a crase)
     console.log(`servidor no ar, na porta ${port}`);
 });
+
+module.exports = server
