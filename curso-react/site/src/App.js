@@ -1,7 +1,8 @@
 import React from 'react';
-import {CursoIndex} from './paginas/curso'
-import {ContatoIndex} from './paginas/contato'
-import {MenuIndex} from './paginas/menu'
+import { CursoIndex } from './paginas/curso'
+import { ContatoIndex } from './paginas/contato'
+import { MenuIndex } from './paginas/menu'
+import { RotaIndex } from './rotas'
 
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
@@ -15,9 +16,8 @@ function App() {
   return (
 
     <div>
-      <MenuIndex/>
-      <CursoIndex/>
-      <ContatoIndex/>
+      <MenuIndex />
+      <RotaIndex />
     </div>
   );
 }

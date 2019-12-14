@@ -1,12 +1,18 @@
 import React from 'react';
+import {Switch, Route} from'react-router-dom'
+import {CursoIndex} from '../paginas/curso'
+import { ContatoIndex } from '../paginas/contato';
 
-export class ContatoIndex extends React.Component {
+      
+export class RotaIndex extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <h1>Curso Contato</h1>
-            </div>
+            <Switch>
+                <Route path="/cursos" component= {CursoIndex}></Route>
+                <Route path="/contato" component= {ContatoIndex}/>
+                <Route path="*" component= {CursoIndex}></Route>
+            </Switch>
         )
     }
 }
