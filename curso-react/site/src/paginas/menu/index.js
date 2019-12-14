@@ -1,12 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export class MenuIndex extends React.Component {
 
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="#">
-                    ABC Course </a>
+                <Link className="navbar-brand" to='/'>ABC Courses</Link>
 
                 <button className="navbar-toggler" type="button"
                     data-toggle="collapse"
@@ -19,10 +19,10 @@ export class MenuIndex extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#/cursos">Cursos</a>
+                        <Link className="navbar-brand" to='/cursos'>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#/contato">Contato</a>
+                        <Link className="navbar-brand" to='/contatos'>Contatos</Link>
                         </li>
                     </ul>
                 </div>
