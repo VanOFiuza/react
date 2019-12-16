@@ -1,10 +1,10 @@
 import React from 'react';
 import {Switch, Route} from'react-router-dom'
 import {CursoIndex} from '../paginas/curso'
-import { ContatoIndex } from '../paginas/contato';
+import {ContatoIndex } from '../paginas/contato';
 
       
-export class RotaIndex extends React.Component {
+export class Rotas extends React.Component {
 
     render() {
         return (

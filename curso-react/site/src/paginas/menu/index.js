@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export class MenuIndex extends React.Component {
+export class Menu extends React.Component {
 
     render() {
         return (
@@ -22,7 +22,7 @@ export class MenuIndex extends React.Component {
                         <Link className="navbar-brand" to='/cursos'>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="navbar-brand" to='/contatos'>Contatos</Link>
+                        <Link className="navbar-brand" to='/contato'>Contatos</Link>
                         </li>
                     </ul>
                 </div>
