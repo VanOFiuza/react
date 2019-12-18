@@ -91,6 +91,7 @@ export class CadastroCurso extends Component {
             cargaHoraria,
             categoria,
             preco
+
             
         }
         if (_id) {
