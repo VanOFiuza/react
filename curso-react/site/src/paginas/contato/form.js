@@ -6,9 +6,18 @@ import {
     nomeOnChange,
     assuntoOnChange,
     emailOnChange,
-    telefoneOnChange
+    telefoneOnChange,
+    limpar,
+    adicionar
 } from '../../actions/contatoActions'
  class ContatoForm extends Component {
+    preAdicionar(evento){
+        evento.preventDefault()
+        const {data, nome, email, telefone, assunto , adicionar} = this.props
+        
+        adicionar(data, nome, email, telefone, assunto)
+    }
+
     render() {
         return (
             <div>
@@ -38,6 +47,9 @@ import {
                         <div className="col-sm-9">
                             <input type="email"
                                 className="form-control" id="email"
+
+
+                                
                                 value={this.props.email} onChange = {this.props.emailOnChange}  />
                         </div>
                     </div>
@@ -60,9 +72,14 @@ import {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <button className="btn btn-primary ml-3 mb-3">
+                        <button className="btn btn-primary ml-3 mb-3"
+                            onClick={this.preAdicionar.bind(this)}>
                             Adicionar
-                         </button>
+                        </button>
+                        <button className="btn btn-primary ml-3 mb-3"
+                            onClick={this.props.limpar}>
+                            Limpar
+                        </button>
                     </div>
                 </form>
             </div>
@@ -82,6 +99,8 @@ const mapActionToProps =  dispatch => bindActionCreators({
     assuntoOnChange,
     telefoneOnChange,
     emailOnChange,
+    limpar,
+    adicionar
 }, dispatch)
 
 
